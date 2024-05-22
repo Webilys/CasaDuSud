@@ -25,7 +25,7 @@ header {
           list-style: none;
           li {
             padding: 0 20px;
-
+            transition: 0.2s;
             a {
               color: $white;
               text-shadow: 0 0 5px $black;
@@ -37,6 +37,10 @@ header {
               border-radius: 20px;
               background: $color1;
               text-shadow: none;
+            }
+
+            &:hover {
+              transform: translateY(-5px);
             }
           }
         }
