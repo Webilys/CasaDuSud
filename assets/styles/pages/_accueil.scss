@@ -1,0 +1,21 @@
+#accueil {
+  height: 100vh;
+  background: url(../img/bg-home.jpeg) center/cover;
+
+  header {
+    background: $whiteShadow;
+  }
+  main {
+    background: $whiteShadow;
+    height: 80vh;
+
+    .hero {
+      height: 100%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

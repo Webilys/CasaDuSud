@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "montserrat";
+  src: url(../fonts/Montserrat.ttf);
+}
+
+$font1: montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+
+$color1: #ceaf83;
+$black: #000000;
+$white: #ffffff;
+$text: #333333;
+$blackShadow: rgba(0, 0, 0, 0.25);
+$whiteShadow: rgba(255, 255, 255, 0.25);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font1;
+  color: $text;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color1;
+  text-transform: uppercase;
+}

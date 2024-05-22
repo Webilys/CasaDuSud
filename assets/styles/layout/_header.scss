@@ -1,0 +1,32 @@
+header {
+  .container {
+    width: 100%;
+    padding: 20px 50px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    gap: 20px;
+
+    .logo {
+      img {
+        width: 60%;
+      }
+    }
+
+    .navDiv {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      nav {
+        ul {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          list-style: none;
+          li {
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
