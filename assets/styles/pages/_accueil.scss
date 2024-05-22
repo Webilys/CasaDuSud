@@ -3,11 +3,11 @@
   background: url(../img/bg-home.jpeg) center/cover;
 
   header {
-    background: $whiteShadow;
+    background: $whiteBg;
   }
   main {
-    background: $whiteShadow;
-    height: 80vh;
+    background: $whiteBg;
+    height: 80%;
 
     .hero {
       height: 100%;
@@ -16,6 +16,18 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      h1 {
+        padding-bottom: 30px;
+        color: $white;
+        text-shadow: 0 0 10px $blackShadow;
+        font-size: 2rem;
+      }
+
+      p {
+        padding-bottom: 30px;
+        color: $black;
+      }
     }
   }
 }

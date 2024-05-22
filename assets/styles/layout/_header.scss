@@ -8,7 +8,8 @@ header {
 
     .logo {
       img {
-        width: 60%;
+        width: 50%;
+        filter: drop-shadow(0 0 5px $white);
       }
     }
 
@@ -24,6 +25,19 @@ header {
           list-style: none;
           li {
             padding: 0 20px;
+
+            a {
+              color: $white;
+              text-shadow: 0 0 5px $black;
+            }
+
+            .button-reservation {
+              border: 1px solid $color1;
+              padding: 10px 20px;
+              border-radius: 20px;
+              background: $color1;
+              text-shadow: none;
+            }
           }
         }
       }

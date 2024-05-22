@@ -12,6 +12,7 @@
 body {
   font-family: montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   color: #333333;
+  font-size: 1rem;
 }
 
 .container {
@@ -29,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #ceaf83;
+  color: #0097b2;
   text-transform: uppercase;
 }
 
@@ -41,7 +42,9 @@ header .container {
   gap: 20px;
 }
 header .container .logo img {
-  width: 60%;
+  width: 50%;
+  -webkit-filter: drop-shadow(0 0 5px #ffffff);
+          filter: drop-shadow(0 0 5px #ffffff);
 }
 header .container .navDiv {
   display: -webkit-box;
@@ -68,9 +71,20 @@ header .container .navDiv nav ul {
 header .container .navDiv nav ul li {
   padding: 0 20px;
 }
+header .container .navDiv nav ul li a {
+  color: #ffffff;
+  text-shadow: 0 0 5px #000000;
+}
+header .container .navDiv nav ul li .button-reservation {
+  border: 1px solid #0097b2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #0097b2;
+  text-shadow: none;
+}
 
 footer {
-  background: #ceaf83;
+  background: #0097b2;
 }
 footer .container {
   display: grid;
@@ -104,11 +118,11 @@ footer .container ul li {
   background: url(../img/bg-home.jpeg) center/cover;
 }
 #accueil header {
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.5);
 }
 #accueil main {
-  background: rgba(255, 255, 255, 0.25);
-  height: 80vh;
+  background: rgba(255, 255, 255, 0.5);
+  height: 80%;
 }
 #accueil main .hero {
   height: 100%;
@@ -126,4 +140,14 @@ footer .container ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+#accueil main .hero h1 {
+  padding-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
+}
+#accueil main .hero p {
+  padding-bottom: 30px;
+  color: #000000;
 }/*# sourceMappingURL=index.css.map */
