@@ -7,9 +7,22 @@ header {
     gap: 20px;
 
     .logo {
-      img {
-        width: 100%;
-        filter: drop-shadow(0 0 5px $white);
+      transition: 0.2s;
+
+      a {
+        text-shadow: none;
+        img {
+          width: 100%;
+          filter: drop-shadow(0 0 5px $white);
+          transition: 0.2s;
+        }
+      }
+
+      &:hover {
+        @include grow;
+        img {
+          filter: drop-shadow(0 0 10px $white);
+        }
       }
     }
 
@@ -32,15 +45,18 @@ header {
             }
 
             .button-reservation {
-              border: 1px solid $color1;
-              padding: 10px 20px;
-              border-radius: 20px;
-              background: $color1;
-              text-shadow: none;
+              box-shadow: none;
+
+              a {
+                text-shadow: none;
+              }
+              &:hover {
+                animation: none;
+              }
             }
 
             &:hover {
-              transform: translateY(-5px);
+              animation: pulse 0.7s infinite linear;
             }
           }
         }

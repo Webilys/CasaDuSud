@@ -17,16 +17,15 @@
       justify-content: center;
       align-items: center;
 
-      h1 {
-        padding-bottom: 30px;
+      h1,
+      p {
+        margin-bottom: 30px;
         color: $white;
-        text-shadow: 0 0 10px $blackShadow;
-        font-size: 2rem;
+        text-shadow: 0 0 10px $black;
       }
 
-      p {
-        padding-bottom: 30px;
-        color: $black;
+      h1 {
+        font-size: 2rem;
       }
     }
   }

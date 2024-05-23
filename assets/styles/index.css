@@ -7,12 +7,12 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 body {
-  font-family: montserrat, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  color: #333333;
   font-size: 1rem;
+  color: #333333;
 }
 
 .container {
@@ -34,6 +34,60 @@ h6 {
   text-transform: uppercase;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    scale: 1;
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+button {
+  background: none;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button a {
+  border: 1px solid #0097b2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #0097b2;
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+button a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+button:hover {
+  -webkit-animation: pulse 0.7s infinite linear;
+          animation: pulse 0.7s infinite linear;
+}
+
 header .container {
   width: 100%;
   padding: 20px 50px;
@@ -41,10 +95,27 @@ header .container {
   grid-template-columns: 20% 80%;
   gap: 20px;
 }
-header .container .logo img {
+header .container .logo {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header .container .logo a {
+  text-shadow: none;
+}
+header .container .logo a img {
   width: 100%;
   -webkit-filter: drop-shadow(0 0 5px #ffffff);
           filter: drop-shadow(0 0 5px #ffffff);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+header .container .logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+header .container .logo:hover img {
+  -webkit-filter: drop-shadow(0 0 10px #ffffff);
+          filter: drop-shadow(0 0 10px #ffffff);
 }
 header .container .navDiv {
   display: -webkit-box;
@@ -78,15 +149,19 @@ header .container .navDiv nav ul li a {
   text-shadow: 0 0 5px #000000;
 }
 header .container .navDiv nav ul li .button-reservation {
-  border: 1px solid #0097b2;
-  padding: 10px 20px;
-  border-radius: 20px;
-  background: #0097b2;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+header .container .navDiv nav ul li .button-reservation a {
   text-shadow: none;
 }
+header .container .navDiv nav ul li .button-reservation:hover {
+  -webkit-animation: none;
+          animation: none;
+}
 header .container .navDiv nav ul li:hover {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-animation: pulse 0.7s infinite linear;
+          animation: pulse 0.7s infinite linear;
 }
 
 footer {
@@ -124,10 +199,10 @@ footer .container ul li {
   background: url(../img/bg-home.jpeg) center/cover;
 }
 #accueil header {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
 }
 #accueil main {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.1);
   height: 80%;
 }
 #accueil main .hero {
@@ -147,13 +222,12 @@ footer .container ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-#accueil main .hero h1 {
-  padding-bottom: 30px;
-  color: #ffffff;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-  font-size: 2rem;
-}
+#accueil main .hero h1,
 #accueil main .hero p {
-  padding-bottom: 30px;
-  color: #000000;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
+}
+#accueil main .hero h1 {
+  font-size: 2rem;
 }/*# sourceMappingURL=index.css.map */
