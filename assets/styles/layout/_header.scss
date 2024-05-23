@@ -1,4 +1,6 @@
 header {
+  background: $color1;
+
   .container {
     width: 100%;
     padding: 20px 50px;
@@ -6,9 +8,12 @@ header {
     grid-template-columns: 20% 80%;
     gap: 20px;
 
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: 30% 70%;
+    }
     .logo {
       transition: 0.2s;
-
+      background: $whiteShadow;
       a {
         text-shadow: none;
         img {
@@ -26,41 +31,107 @@ header {
       }
     }
 
+    .menuIcons {
+      display: none;
+
+      @media screen and (max-width: 1250px) {
+        display: block;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 30px;
+      }
+
+      i {
+        font-size: 2rem;
+        color: $white;
+      }
+
+      #closeIcon {
+        display: none;
+      }
+    }
+
     .navDiv {
       display: flex;
       justify-content: flex-end;
       align-items: center;
+
+      @media screen and (max-width: 1250px) {
+        position: relative;
+      }
+
       nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+
+        @media screen and (max-width: 1250px) {
+          display: none;
+          width: 80vw;
+          background: $color1;
+          position: absolute;
+          margin: 0 auto;
+          justify-content: center;
+          top: 20px;
+          left: 0;
+          z-index: 100000;
+        }
         ul {
           display: flex;
           justify-content: space-around;
           align-items: center;
           list-style: none;
+
+          @media screen and (max-width: 1250px) {
+            display: block;
+            text-align: center;
+            box-shadow: 0 0 10px $white;
+          }
           li {
             padding: 0 20px;
             transition: 0.2s;
+
+            @media screen and (max-width: 1250px) {
+              padding: 20px;
+              border-bottom: 1px solid $borderNav;
+            }
             a {
               color: $white;
               text-shadow: 0 0 5px $black;
-            }
 
-            .button-reservation {
-              box-shadow: none;
-
-              a {
-                text-shadow: none;
-              }
-              &:hover {
-                animation: none;
+              @media screen and (max-width: 1250px) {
+                padding: 20px;
               }
             }
 
             &:hover {
               animation: pulse 0.7s infinite linear;
+
+              @media screen and (max-width: 1250px) {
+                animation: none;
+              }
             }
           }
         }
       }
+
+      .button-reservation {
+        box-shadow: none;
+
+        @media screen and (max-width: 1250px) {
+          display: none;
+        }
+        a {
+          text-shadow: none;
+        }
+      }
     }
+  }
+}
+
+#accueil {
+  header {
+    background: transparent;
   }
 }

@@ -3,12 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Casa du Sud - Votre escapade détente à Béziers</title>
+    <title>Casa du Sud - Location de vacances à Béziers</title>
+    <meta
+      name="description"
+      content="Découvrez Casa du Sud, votre appartement idéal à Béziers pour un séjour relaxant. Profitez d'un logement confortable, à proximité des plages, avec tous les équipements nécessaires. Réservez dès maintenant !"
+    />
+    <meta
+      name="keywords"
+      content="Appartement Béziers, Location vacances Béziers, Séjour relaxant Béziers, Appartement avec balcon Béziers, Proche plages Béziers, Hébergement Béziers, Location saisonnière Béziers, Logement équipé Béziers, Airbnb Béziers, Escapade détente Béziers"
+    />
 
     <link rel="shortcut icon" href="./assets/img/logo-casa-du-sud.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
-  <body id="accueil">
+  <body id="accueil" onload="windowLoad()">
     <header>
       <div class="container">
         <div class="logo">
@@ -17,6 +32,14 @@
               src="./assets/img/logo-casa-du-sud.png"
               alt="Logo Casa du Sud"
           /></a>
+        </div>
+        <div class="menuIcons">
+          <i class="fa-solid fa-bars" id="openIcon" onclick="openNav()"></i>
+          <i
+            class="fa-regular fa-circle-xmark"
+            id="closeIcon"
+            onclick="closeNav()"
+          ></i>
         </div>
         <div class="navDiv">
           <nav>
@@ -28,17 +51,15 @@
               <li><a href="./temoignages.html">Témoignages</a></li>
               <li><a href="./decouvrir-beziers.html">À proximité</a></li>
               <li><a href="./contact.html">Contact</a></li>
-              <li>
-                <button class="button-reservation">
-                  <a
-                    href="https://www.airbnb.fr/rooms/1148893597567449760?guests=1&adults=1&s=67&unique_share_id=9d69805c-6a24-4588-baec-9f32d09b264c&source_impression_id=p3_1716347085_r8dJvZ%2FMAGUNn5eJ"
-                    target="_blank"
-                    >Réserver</a
-                  >
-                </button>
-              </li>
             </ul>
           </nav>
+          <button class="button-reservation">
+            <a
+              href="https://www.airbnb.fr/rooms/1148893597567449760?guests=1&adults=1&s=67&unique_share_id=9d69805c-6a24-4588-baec-9f32d09b264c&source_impression_id=p3_1716347085_r8dJvZ%2FMAGUNn5eJ"
+              target="_blank"
+              >Réserver</a
+            >
+          </button>
         </div>
       </div>
     </header>

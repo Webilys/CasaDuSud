@@ -1,6 +1,10 @@
 #accueil {
   height: 100vh;
-  background: url(../img/bg-home.jpeg) center/cover;
+  background: url(../img/bg-home.jpeg) no-repeat center/cover;
+
+  @media screen and (max-width: 1250px) {
+    height: 120vh;
+  }
 
   header {
     background: $whiteBg;
@@ -26,6 +30,10 @@
 
       h1 {
         font-size: 2rem;
+      }
+
+      button {
+        margin-top: 30px;
       }
     }
   }

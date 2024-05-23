@@ -88,6 +88,9 @@ button:hover {
           animation: pulse 0.7s infinite linear;
 }
 
+header {
+  background: #0097b2;
+}
 header .container {
   width: 100%;
   padding: 20px 50px;
@@ -95,9 +98,15 @@ header .container {
   grid-template-columns: 20% 80%;
   gap: 20px;
 }
+@media screen and (max-width: 1250px) {
+  header .container {
+    grid-template-columns: 30% 70%;
+  }
+}
 header .container .logo {
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  background: rgba(255, 255, 255, 0.25);
 }
 header .container .logo a {
   text-shadow: none;
@@ -117,6 +126,31 @@ header .container .logo:hover img {
   -webkit-filter: drop-shadow(0 0 10px #ffffff);
           filter: drop-shadow(0 0 10px #ffffff);
 }
+header .container .menuIcons {
+  display: none;
+}
+@media screen and (max-width: 1250px) {
+  header .container .menuIcons {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 30px;
+  }
+}
+header .container .menuIcons i {
+  font-size: 2rem;
+  color: #ffffff;
+}
+header .container .menuIcons #closeIcon {
+  display: none;
+}
 header .container .navDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +161,35 @@ header .container .navDiv {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 1250px) {
+  header .container .navDiv {
+    position: relative;
+  }
+}
+header .container .navDiv nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1250px) {
+  header .container .navDiv nav {
+    display: none;
+    width: 80vw;
+    background: #0097b2;
+    position: absolute;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    top: 20px;
+    left: 0;
+    z-index: 100000;
+  }
 }
 header .container .navDiv nav ul {
   display: -webkit-box;
@@ -139,29 +202,59 @@ header .container .navDiv nav ul {
           align-items: center;
   list-style: none;
 }
+@media screen and (max-width: 1250px) {
+  header .container .navDiv nav ul {
+    display: block;
+    text-align: center;
+    -webkit-box-shadow: 0 0 10px #ffffff;
+            box-shadow: 0 0 10px #ffffff;
+  }
+}
 header .container .navDiv nav ul li {
   padding: 0 20px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
+@media screen and (max-width: 1250px) {
+  header .container .navDiv nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
 header .container .navDiv nav ul li a {
   color: #ffffff;
   text-shadow: 0 0 5px #000000;
 }
-header .container .navDiv nav ul li .button-reservation {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-header .container .navDiv nav ul li .button-reservation a {
-  text-shadow: none;
-}
-header .container .navDiv nav ul li .button-reservation:hover {
-  -webkit-animation: none;
-          animation: none;
+@media screen and (max-width: 1250px) {
+  header .container .navDiv nav ul li a {
+    padding: 20px;
+  }
 }
 header .container .navDiv nav ul li:hover {
   -webkit-animation: pulse 0.7s infinite linear;
           animation: pulse 0.7s infinite linear;
+}
+@media screen and (max-width: 1250px) {
+  header .container .navDiv nav ul li:hover {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+header .container .navDiv .button-reservation {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+@media screen and (max-width: 1250px) {
+  header .container .navDiv .button-reservation {
+    display: none;
+  }
+}
+header .container .navDiv .button-reservation a {
+  text-shadow: none;
+}
+
+#accueil header {
+  background: transparent;
 }
 
 footer {
@@ -196,7 +289,12 @@ footer .container ul li {
 
 #accueil {
   height: 100vh;
-  background: url(../img/bg-home.jpeg) center/cover;
+  background: url(../img/bg-home.jpeg) no-repeat center/cover;
+}
+@media screen and (max-width: 1250px) {
+  #accueil {
+    height: 120vh;
+  }
 }
 #accueil header {
   background: rgba(255, 255, 255, 0.1);
@@ -230,4 +328,7 @@ footer .container ul li {
 }
 #accueil main .hero h1 {
   font-size: 2rem;
+}
+#accueil main .hero button {
+  margin-top: 30px;
 }/*# sourceMappingURL=index.css.map */
