@@ -1,5 +1,41 @@
 #logement {
-  .description {
+  .slide-gallery {
     padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    #left,
+    #right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      i {
+        font-size: 2rem;
+        color: $color1;
+        transition: 0.2s;
+
+        &:hover {
+          color: $color2;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    #imgGalery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      border-radius: 20px;
+      box-shadow: 0 0 10px $blackShadow;
+    }
   }
+}
+.description {
+  padding: 50px 0;
 }

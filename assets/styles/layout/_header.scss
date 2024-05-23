@@ -13,7 +13,7 @@ header {
     }
     .logo {
       transition: 0.2s;
-      background: $whiteShadow;
+      background: $white;
       border-radius: 20px;
       box-shadow: 0 0 5px $white;
       padding: 10px;
@@ -22,16 +22,11 @@ header {
         text-shadow: none;
         img {
           width: 100%;
-          filter: drop-shadow(0 0 5px $white);
-          transition: 0.2s;
         }
       }
 
       &:hover {
         @include grow;
-        img {
-          filter: drop-shadow(0 0 10px $white);
-        }
       }
     }
 

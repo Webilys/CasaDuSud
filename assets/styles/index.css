@@ -91,9 +91,8 @@ h6 {
   }
 }
 .title-page {
-  background: #0097b2;
-  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
 }
 .title-page .container {
   display: -webkit-box;
@@ -108,7 +107,7 @@ h6 {
   padding: 50px;
 }
 .title-page .container h1 {
-  color: #ffffff;
+  color: #0097b2;
 }
 
 button {
@@ -185,7 +184,7 @@ header .container {
 header .container .logo {
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: rgba(255, 255, 255, 0.25);
+  background: #ffffff;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 5px #ffffff;
           box-shadow: 0 0 5px #ffffff;
@@ -196,18 +195,10 @@ header .container .logo a {
 }
 header .container .logo a img {
   width: 100%;
-  -webkit-filter: drop-shadow(0 0 5px #ffffff);
-          filter: drop-shadow(0 0 5px #ffffff);
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
 }
 header .container .logo:hover {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-}
-header .container .logo:hover img {
-  -webkit-filter: drop-shadow(0 0 10px #ffffff);
-          filter: drop-shadow(0 0 10px #ffffff);
 }
 header .container .menuIcons {
   display: none;
@@ -420,6 +411,60 @@ footer .container ul li {
   margin-top: 30px;
 }
 
-#logement .description {
+#logement .slide-gallery {
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement .slide-gallery #left,
+#logement .slide-gallery #right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement .slide-gallery #left i,
+#logement .slide-gallery #right i {
+  font-size: 2rem;
+  color: #0097b2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#logement .slide-gallery #left i:hover,
+#logement .slide-gallery #right i:hover {
+  color: #0cc0df;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+#logement .slide-gallery #imgGalery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+.description {
   padding: 50px 0;
 }/*# sourceMappingURL=index.css.map */
