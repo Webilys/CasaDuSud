@@ -40,28 +40,22 @@ const img3 = "url(./assets/img/3.webp) center/cover";
 const img4 = "url(./assets/img/4.webp) center/cover";
 const img5 = "url(./assets/img/5.webp) center/cover";
 const img6 = "url(./assets/img/6.webp) center/cover";
+
+let number = 1;
+let numberImg = "img" + number;
 imgGalery.style.background = img1;
 
-// imgBg = imgGalery.style.background;
+function afficheBg() {
+  imgGalery.style.background = numberImg;
+}
 
 function precedent() {
-  if ((imgGalery.style.background = img1)) {
-    imgGalery.style.background = img6;
-  } else {
-    if ((imgGalery.style.background = img2)) {
-      imgGalery.style.background = img1;
-    }
-    if ((imgGalery.style.background = img3)) {
-      imgGalery.style.background = img2;
-    }
-    if ((imgGalery.style.background = img4)) {
-      imgGalery.style.background = img3;
-    }
-    if ((imgGalery.style.background = img5)) {
-      imgGalery.style.background = img4;
-    }
-    if ((imgGalery.style.background = img6)) {
-      imgGalery.style.background = img5;
-    }
-  }
+  number - 1;
+  afficheBg();
+  console.log(numberImg);
+}
+
+function suivant() {
+  number + 1;
+  afficheBg();
 }
