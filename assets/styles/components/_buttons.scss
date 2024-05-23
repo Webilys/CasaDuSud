@@ -2,6 +2,33 @@ button {
   background: none;
   border: none;
   transition: 0.2s;
+  margin-top: 30px;
+
+  a {
+    border: 1px solid $white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background: $white;
+    box-shadow: 0 0 5px $whiteShadow;
+    color: $color1;
+    font-size: 1rem;
+    transition: 0.2s;
+
+    &:hover {
+      box-shadow: 0 0 10px $whiteShadow;
+    }
+  }
+
+  &:hover {
+    animation: pulse 0.7s infinite linear;
+  }
+}
+
+.buttonBlue {
+  background: none;
+  border: none;
+  transition: 0.2s;
+  margin-top: 30px;
 
   a {
     border: 1px solid $color1;

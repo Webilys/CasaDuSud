@@ -34,6 +34,35 @@ h6 {
   text-transform: uppercase;
 }
 
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.3rem;
+  padding-bottom: 30px;
+}
+
+h4 {
+  font-size: 1.2rem;
+  padding-bottom: 30px;
+}
+
+h5 {
+  font-size: 1.1rem;
+  padding-bottom: 30px;
+}
+
+h6 {
+  font-size: 1rem;
+  padding-bottom: 30px;
+}
+
 @-webkit-keyframes pulse {
   0% {
     scale: 1;
@@ -61,20 +90,42 @@ h6 {
             transform: scale(1);
   }
 }
+.title-page {
+  background: #0097b2;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+.title-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px;
+}
+.title-page .container h1 {
+  color: #ffffff;
+}
+
 button {
   background: none;
   border: none;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  margin-top: 30px;
 }
 button a {
-  border: 1px solid #0097b2;
+  border: 1px solid #ffffff;
   padding: 10px 20px;
   border-radius: 20px;
-  background: #0097b2;
+  background: #ffffff;
   -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
           box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
-  color: #ffffff;
+  color: #0097b2;
   font-size: 1rem;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -88,12 +139,40 @@ button:hover {
           animation: pulse 0.7s infinite linear;
 }
 
+.buttonBlue {
+  background: none;
+  border: none;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  margin-top: 30px;
+}
+.buttonBlue a {
+  border: 1px solid #0097b2;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background: #0097b2;
+  -webkit-box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  font-size: 1rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.buttonBlue a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
+}
+.buttonBlue:hover {
+  -webkit-animation: pulse 0.7s infinite linear;
+          animation: pulse 0.7s infinite linear;
+}
+
 header {
   background: #0097b2;
 }
 header .container {
   width: 100%;
-  padding: 20px 50px 0;
+  padding: 20px 50px;
   display: grid;
   grid-template-columns: 20% 80%;
   gap: 20px;
@@ -107,6 +186,10 @@ header .container .logo {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px #ffffff;
+          box-shadow: 0 0 5px #ffffff;
+  padding: 10px;
 }
 header .container .logo a {
   text-shadow: none;
@@ -243,6 +326,7 @@ header .container .navDiv nav ul li:hover {
 header .container .navDiv .button-reservation {
   -webkit-box-shadow: none;
           box-shadow: none;
+  margin-top: 0;
 }
 @media screen and (max-width: 1250px) {
   header .container .navDiv .button-reservation {
@@ -251,6 +335,9 @@ header .container .navDiv .button-reservation {
 }
 header .container .navDiv .button-reservation a {
   text-shadow: none;
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: #0097b2;
 }
 
 #accueil header {
@@ -331,4 +418,8 @@ footer .container ul li {
 }
 #accueil main .hero button {
   margin-top: 30px;
+}
+
+#logement .description {
+  padding: 50px 0;
 }/*# sourceMappingURL=index.css.map */
