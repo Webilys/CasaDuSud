@@ -792,7 +792,7 @@ footer .container ul li {
   background: #ffffff;
   -webkit-box-shadow: 0 0 10px #0097b2;
           box-shadow: 0 0 10px #0097b2;
-  padding: 20px;
+  padding: 10px 20px 20px;
   display: grid;
   grid-template-columns: 70% 30%;
   position: fixed;
@@ -802,7 +802,7 @@ footer .container ul li {
   z-index: 100000000000000;
 }
 .footerbar h2 {
-  padding: 10px;
+  padding: 0 0 10px 50px;
 }
 .footerbar i {
   color: #0097b2;
@@ -815,7 +815,7 @@ footer .container ul li {
           justify-content: start;
 }
 .footerbar .infosLogement p {
-  padding-left: 20px;
+  padding-left: 50px;
 }
 .footerbar .buttonFooter {
   display: -webkit-box;
@@ -826,5 +826,5 @@ footer .container ul li {
           justify-content: flex-end;
 }
 .footerbar .buttonFooter button {
-  margin-right: 50px;
+  margin: 10px 50px 0 0;
 }/*# sourceMappingURL=index.css.map */
