@@ -1,6 +1,5 @@
 header {
-  background: $color1;
-
+  background: url(../img/bg-home.jpeg) center/cover;
   .container {
     width: 100%;
     padding: 20px 50px;
@@ -107,10 +106,6 @@ header {
 
               @media screen and (max-width: 1250px) {
                 padding: 20px;
-              }
-
-              &:active {
-                border: 1px solid $white;
               }
             }
 

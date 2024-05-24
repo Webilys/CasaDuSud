@@ -1,11 +1,106 @@
 #logement {
-  .description {
-    padding: 50px 0;
+  main {
+    h2 {
+      padding: 40px 0;
+    }
+  }
+
+  .menuLogement {
+    padding: 30px;
+    ul {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      li {
+        list-style: none;
+
+        a {
+          padding-left: 20px;
+          color: $color1;
+          transition: 0.2s;
+
+          &:hover {
+            border: 1px solid $color1;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  #description {
+    padding-top: 50px;
+    border-top: 1px solid $blackShadow;
+
+    .descriptionLogement {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $blackShadow;
+    }
+
+    h2 {
+      padding: 20px 0 40px 0;
+    }
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        list-style: none;
+        padding: 0px 20px 40px 0;
+        display: flex;
+        align-items: center;
+
+        i {
+          margin-right: 10px;
+          font-size: 1.5rem;
+          color: $color1;
+        }
+      }
+    }
+
+    .more-content {
+      display: none;
+    }
+    .more-link {
+      color: $color1;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  #points-forts {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-wrap: 1fr 1fr 1fr;
+
+      li {
+        list-style: none;
+        padding: 10px 20px;
+        margin: 20px 20px 20px 0;
+        border-radius: 20px;
+        // border: 1px solid $color1;
+        box-shadow: 0 0 5px $color1;
+
+        i {
+          margin-right: 10px;
+          color: $color1;
+        }
+      }
+    }
+  }
+
+  #infoCuisineList,
+  #infoLingeMaisonList {
+    display: none;
   }
 
   .galerie-logement {
     .container {
-      padding: 50px 0;
       .imageLogement {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -24,5 +119,9 @@
         }
       }
     }
+  }
+
+  footer {
+    margin-bottom: 120px;
   }
 }

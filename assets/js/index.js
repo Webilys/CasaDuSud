@@ -32,10 +32,29 @@ function closeNav() {
 
 //-------------PAGE LOGEMENT-----------------
 
+// Fonction pour ouvrir le slide en cliquant sur les images
 function slide() {
   window.location.href = "./slide.html";
 }
 
+//Description longue
+document.querySelector(".more-link").addEventListener("click", function () {
+  var moreContent = document.querySelector(".more-content");
+  var dots = document.querySelector(".dots");
+  if (moreContent.style.display === "none") {
+    moreContent.style.display = "inline";
+    dots.style.display = "none";
+    this.textContent = "Lire moins";
+  } else {
+    moreContent.style.display = "none";
+    dots.style.display = "inline";
+    this.textContent = "Lire plus";
+  }
+});
+
+//Bulle infos
+const infoCuisine = document.getElementById("infoCuisine");
+const infoLingeMaison = document.getElementById("infoLingeMaison");
 //-------------PAGE SLIDE-----------------
 
 //fonction pour fermer le visualisateur

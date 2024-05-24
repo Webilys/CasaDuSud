@@ -91,10 +91,6 @@ h6 {
             transform: scale(1);
   }
 }
-.title-page {
-  -webkit-box-shadow: 0 0 10px #0097b2;
-          box-shadow: 0 0 10px #0097b2;
-}
 .title-page .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -109,7 +105,8 @@ h6 {
   text-align: center;
 }
 .title-page .container h1 {
-  color: #0097b2;
+  color: #ffffff;
+  text-shadow: 0 0 10px #000000;
 }
 
 button {
@@ -169,7 +166,7 @@ button:hover {
 }
 
 header {
-  background: #0097b2;
+  background: url(../img/bg-home.jpeg) center/cover;
 }
 header .container {
   width: 100%;
@@ -313,9 +310,6 @@ header .container .navDiv nav ul li a {
     padding: 20px;
   }
 }
-header .container .navDiv nav ul li a:active {
-  border: 1px solid #ffffff;
-}
 header .container .navDiv nav ul li:hover {
   -webkit-animation: pulse 0.7s infinite linear;
           animation: pulse 0.7s infinite linear;
@@ -349,8 +343,8 @@ header .container .navDiv .button-reservation a {
 
 footer {
   background: #ffffff;
-  -webkit-box-shadow: 0 0 10px #0097b2;
-          box-shadow: 0 0 10px #0097b2;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 footer .container {
   display: grid;
@@ -425,11 +419,106 @@ footer .container ul li {
   margin-top: 30px;
 }
 
-#logement .description {
-  padding: 50px 0;
+#logement main h2 {
+  padding: 40px 0;
 }
-#logement .galerie-logement .container {
-  padding: 50px 0;
+#logement .menuLogement {
+  padding: 30px;
+}
+#logement .menuLogement ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement .menuLogement ul li {
+  list-style: none;
+}
+#logement .menuLogement ul li a {
+  padding-left: 20px;
+  color: #0097b2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#logement .menuLogement ul li a:hover {
+  border: 1px solid #0097b2;
+}
+#logement .menuLogement ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+#logement #description {
+  padding-top: 50px;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+#logement #description .descriptionLogement {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.25);
+}
+#logement #description h2 {
+  padding: 20px 0 40px 0;
+}
+#logement #description ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement #description ul li {
+  list-style: none;
+  padding: 0px 20px 40px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement #description ul li i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #0097b2;
+}
+#logement #description .more-content {
+  display: none;
+}
+#logement #description .more-link {
+  color: #0097b2;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#logement #points-forts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-wrap: 1fr 1fr 1fr;
+      flex-wrap: 1fr 1fr 1fr;
+}
+#logement #points-forts ul li {
+  list-style: none;
+  padding: 10px 20px;
+  margin: 20px 20px 20px 0;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 5px #0097b2;
+          box-shadow: 0 0 5px #0097b2;
+}
+#logement #points-forts ul li i {
+  margin-right: 10px;
+  color: #0097b2;
+}
+#logement #infoCuisineList,
+#logement #infoLingeMaisonList {
+  display: none;
 }
 #logement .galerie-logement .container .imageLogement {
   display: grid;
@@ -449,6 +538,9 @@ footer .container ul li {
           box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+#logement footer {
+  margin-bottom: 120px;
 }
 
 #slide .slide-gallery {
@@ -684,9 +776,18 @@ footer .container ul li {
 }
 
 .footerbar {
-  padding: 20px 50px;
+  width: 100vw;
+  background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
+  padding: 20px;
   display: grid;
   grid-template-columns: 70% 30%;
+  position: fixed;
+  top: 100%;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: 100000000000000;
 }
 .footerbar h2 {
   padding: 10px;
@@ -695,13 +796,23 @@ footer .container ul li {
   color: #0097b2;
 }
 .footerbar .infosLogement {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
 }
 .footerbar .infosLogement p {
   padding-left: 20px;
+}
+.footerbar .buttonFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.footerbar .buttonFooter button {
+  margin-right: 50px;
 }/*# sourceMappingURL=index.css.map */

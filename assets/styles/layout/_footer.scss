@@ -1,6 +1,7 @@
 footer {
   background: $white;
-  box-shadow: 0 0 10px $color1;
+  border-top: 1px solid $blackBg;
+  position: relative;
 
   .container {
     display: grid;
