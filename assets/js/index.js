@@ -32,8 +32,8 @@ function closeNav() {
 
 //-------------PAGE LOGEMENT-----------------
 
-function slide1() {
-  window.open("slide.html", "_blank");
+function slide() {
+  window.location.href = "./slide.html";
 }
 
 //-------------PAGE SLIDE-----------------

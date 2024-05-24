@@ -1,0 +1,22 @@
+.footerbar {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  h2 {
+    padding: 10px;
+  }
+
+  i {
+    color: $color1;
+  }
+
+  .infosLogement {
+    display: flex;
+    justify-content: start;
+
+    p {
+      padding-left: 20px;
+    }
+  }
+}

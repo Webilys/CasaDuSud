@@ -428,6 +428,9 @@ footer .container ul li {
 #logement .description {
   padding: 50px 0;
 }
+#logement .galerie-logement .container {
+  padding: 50px 0;
+}
 #logement .galerie-logement .container .imageLogement {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -438,6 +441,14 @@ footer .container ul li {
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#logement .galerie-logement .container .imageLogement img:hover {
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 #slide .slide-gallery {
@@ -670,4 +681,27 @@ footer .container ul li {
     width: 200px;
     height: 200px;
   }
+}
+
+.footerbar {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+.footerbar h2 {
+  padding: 10px;
+}
+.footerbar i {
+  color: #0097b2;
+}
+.footerbar .infosLogement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+.footerbar .infosLogement p {
+  padding-left: 20px;
 }/*# sourceMappingURL=index.css.map */
