@@ -344,6 +344,8 @@ header .container .navDiv .button-reservation a {
 
 footer {
   background: #ffffff;
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
 }
 footer .container {
   display: grid;
