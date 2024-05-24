@@ -516,6 +516,18 @@ footer .container ul li {
   margin-right: 10px;
   color: #0097b2;
 }
+#logement #infoCuisine,
+#logement #infoLingeMaison {
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  color: #0097b2;
+}
+#logement #infoCuisine:hover,
+#logement #infoLingeMaison:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
 #logement #infoCuisineList,
 #logement #infoLingeMaisonList {
   display: none;

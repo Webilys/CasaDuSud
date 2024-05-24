@@ -55,6 +55,16 @@ document.querySelector(".more-link").addEventListener("click", function () {
 //Bulle infos
 const infoCuisine = document.getElementById("infoCuisine");
 const infoLingeMaison = document.getElementById("infoLingeMaison");
+const infoCuisineList = document.getElementById("infoCuisineList");
+const infoLingeMaisonList = document.getElementById("infoLingeMaisonList");
+
+infoCuisine.addEventListener("click", () => {
+  infoCuisineList.style.display = "block";
+});
+
+infoLingeMaison.addEventListener("click", () => {
+  infoLingeMaisonList.style.display = "block";
+});
 //-------------PAGE SLIDE-----------------
 
 //fonction pour fermer le visualisateur

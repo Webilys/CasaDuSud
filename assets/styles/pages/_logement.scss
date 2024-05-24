@@ -85,12 +85,22 @@
         border-radius: 20px;
         // border: 1px solid $color1;
         box-shadow: 0 0 5px $color1;
-
         i {
           margin-right: 10px;
           color: $color1;
         }
       }
+    }
+  }
+
+  #infoCuisine,
+  #infoLingeMaison {
+    cursor: pointer;
+    transition: 0.2s;
+    color: $color1;
+
+    &:hover {
+      transform: scale(1.2);
     }
   }
 
