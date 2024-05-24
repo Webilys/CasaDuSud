@@ -343,17 +343,17 @@ header .container .navDiv .button-reservation a {
 }
 
 footer {
-  background: #0097b2;
+  background: #ffffff;
 }
 footer .container {
   display: grid;
   grid-template-columns: 70% 30%;
   padding: 10px 0;
   font-size: 0.8rem;
-  color: #ffffff;
+  color: #0097b2;
 }
 footer .container a {
-  color: #ffffff;
+  color: #0097b2;
   font-weight: bold;
 }
 footer .container ul {

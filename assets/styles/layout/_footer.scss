@@ -1,15 +1,15 @@
 footer {
-  background: $color1;
+  background: $white;
 
   .container {
     display: grid;
     grid-template-columns: 70% 30%;
     padding: 10px 0;
     font-size: 0.8rem;
-    color: $white;
+    color: $color1;
 
     a {
-      color: $white;
+      color: $color1;
       font-weight: bold;
     }
     ul {
