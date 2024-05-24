@@ -306,11 +306,15 @@ header .container .navDiv nav ul li {
 header .container .navDiv nav ul li a {
   color: #ffffff;
   text-shadow: 0 0 5px #000000;
+  padding: 10px 0;
 }
 @media screen and (max-width: 1250px) {
   header .container .navDiv nav ul li a {
     padding: 20px;
   }
+}
+header .container .navDiv nav ul li a:active {
+  border: 1px solid #ffffff;
 }
 header .container .navDiv nav ul li:hover {
   -webkit-animation: pulse 0.7s infinite linear;
@@ -421,15 +425,54 @@ footer .container ul li {
   margin-top: 30px;
 }
 
-#logement .slide-gallery {
+#logement .description {
   padding: 50px 0;
 }
-#logement .slide-gallery #image1,
-#logement .slide-gallery #image2,
-#logement .slide-gallery #image3,
-#logement .slide-gallery #image4,
-#logement .slide-gallery #image5,
-#logement .slide-gallery #image6 {
+#logement .galerie-logement .container .imageLogement {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+#logement .galerie-logement .container .imageLogement img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#slide .slide-gallery {
+  padding: 50px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+}
+#slide .slide-gallery #iconCloseVisualisator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 30px;
+  font-size: 2.5rem;
+  color: #0097b2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+@media screen and (max-width: 750px) {
+  #slide .slide-gallery #iconCloseVisualisator {
+    font-size: 2rem;
+  }
+}
+#slide .slide-gallery #iconCloseVisualisator:hover {
+  color: #0cc0df;
+}
+#slide .slide-gallery #image1,
+#slide .slide-gallery #image2,
+#slide .slide-gallery #image3,
+#slide .slide-gallery #image4,
+#slide .slide-gallery #image5,
+#slide .slide-gallery #image6 {
   grid-template-columns: 1fr 2fr 1fr;
   display: grid;
   -webkit-box-pack: center;
@@ -441,18 +484,18 @@ footer .container ul li {
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-#logement .slide-gallery #image1 #left,
-#logement .slide-gallery #image1 #right,
-#logement .slide-gallery #image2 #left,
-#logement .slide-gallery #image2 #right,
-#logement .slide-gallery #image3 #left,
-#logement .slide-gallery #image3 #right,
-#logement .slide-gallery #image4 #left,
-#logement .slide-gallery #image4 #right,
-#logement .slide-gallery #image5 #left,
-#logement .slide-gallery #image5 #right,
-#logement .slide-gallery #image6 #left,
-#logement .slide-gallery #image6 #right {
+#slide .slide-gallery #image1 #left,
+#slide .slide-gallery #image1 #right,
+#slide .slide-gallery #image2 #left,
+#slide .slide-gallery #image2 #right,
+#slide .slide-gallery #image3 #left,
+#slide .slide-gallery #image3 #right,
+#slide .slide-gallery #image4 #left,
+#slide .slide-gallery #image4 #right,
+#slide .slide-gallery #image5 #left,
+#slide .slide-gallery #image5 #right,
+#slide .slide-gallery #image6 #left,
+#slide .slide-gallery #image6 #right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -463,91 +506,73 @@ footer .container ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-#logement .slide-gallery #image1 #left i,
-#logement .slide-gallery #image1 #right i,
-#logement .slide-gallery #image2 #left i,
-#logement .slide-gallery #image2 #right i,
-#logement .slide-gallery #image3 #left i,
-#logement .slide-gallery #image3 #right i,
-#logement .slide-gallery #image4 #left i,
-#logement .slide-gallery #image4 #right i,
-#logement .slide-gallery #image5 #left i,
-#logement .slide-gallery #image5 #right i,
-#logement .slide-gallery #image6 #left i,
-#logement .slide-gallery #image6 #right i {
+#slide .slide-gallery #image1 i,
+#slide .slide-gallery #image2 i,
+#slide .slide-gallery #image3 i,
+#slide .slide-gallery #image4 i,
+#slide .slide-gallery #image5 i,
+#slide .slide-gallery #image6 i {
   font-size: 2.5rem;
   color: #0097b2;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 @media screen and (max-width: 750px) {
-  #logement .slide-gallery #image1 #left i,
-  #logement .slide-gallery #image1 #right i,
-  #logement .slide-gallery #image2 #left i,
-  #logement .slide-gallery #image2 #right i,
-  #logement .slide-gallery #image3 #left i,
-  #logement .slide-gallery #image3 #right i,
-  #logement .slide-gallery #image4 #left i,
-  #logement .slide-gallery #image4 #right i,
-  #logement .slide-gallery #image5 #left i,
-  #logement .slide-gallery #image5 #right i,
-  #logement .slide-gallery #image6 #left i,
-  #logement .slide-gallery #image6 #right i {
+  #slide .slide-gallery #image1 i,
+  #slide .slide-gallery #image2 i,
+  #slide .slide-gallery #image3 i,
+  #slide .slide-gallery #image4 i,
+  #slide .slide-gallery #image5 i,
+  #slide .slide-gallery #image6 i {
     font-size: 2rem;
   }
 }
-#logement .slide-gallery #image1 #left i:hover,
-#logement .slide-gallery #image1 #right i:hover,
-#logement .slide-gallery #image2 #left i:hover,
-#logement .slide-gallery #image2 #right i:hover,
-#logement .slide-gallery #image3 #left i:hover,
-#logement .slide-gallery #image3 #right i:hover,
-#logement .slide-gallery #image4 #left i:hover,
-#logement .slide-gallery #image4 #right i:hover,
-#logement .slide-gallery #image5 #left i:hover,
-#logement .slide-gallery #image5 #right i:hover,
-#logement .slide-gallery #image6 #left i:hover,
-#logement .slide-gallery #image6 #right i:hover {
+#slide .slide-gallery #image1 i:hover,
+#slide .slide-gallery #image2 i:hover,
+#slide .slide-gallery #image3 i:hover,
+#slide .slide-gallery #image4 i:hover,
+#slide .slide-gallery #image5 i:hover,
+#slide .slide-gallery #image6 i:hover {
   color: #0cc0df;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-#logement .slide-gallery #image1 #imgGalery1,
-#logement .slide-gallery #image1 #imgGalery2,
-#logement .slide-gallery #image1 #imgGalery3,
-#logement .slide-gallery #image1 #imgGalery4,
-#logement .slide-gallery #image1 #imgGalery5,
-#logement .slide-gallery #image1 #imgGalery6,
-#logement .slide-gallery #image2 #imgGalery1,
-#logement .slide-gallery #image2 #imgGalery2,
-#logement .slide-gallery #image2 #imgGalery3,
-#logement .slide-gallery #image2 #imgGalery4,
-#logement .slide-gallery #image2 #imgGalery5,
-#logement .slide-gallery #image2 #imgGalery6,
-#logement .slide-gallery #image3 #imgGalery1,
-#logement .slide-gallery #image3 #imgGalery2,
-#logement .slide-gallery #image3 #imgGalery3,
-#logement .slide-gallery #image3 #imgGalery4,
-#logement .slide-gallery #image3 #imgGalery5,
-#logement .slide-gallery #image3 #imgGalery6,
-#logement .slide-gallery #image4 #imgGalery1,
-#logement .slide-gallery #image4 #imgGalery2,
-#logement .slide-gallery #image4 #imgGalery3,
-#logement .slide-gallery #image4 #imgGalery4,
-#logement .slide-gallery #image4 #imgGalery5,
-#logement .slide-gallery #image4 #imgGalery6,
-#logement .slide-gallery #image5 #imgGalery1,
-#logement .slide-gallery #image5 #imgGalery2,
-#logement .slide-gallery #image5 #imgGalery3,
-#logement .slide-gallery #image5 #imgGalery4,
-#logement .slide-gallery #image5 #imgGalery5,
-#logement .slide-gallery #image5 #imgGalery6,
-#logement .slide-gallery #image6 #imgGalery1,
-#logement .slide-gallery #image6 #imgGalery2,
-#logement .slide-gallery #image6 #imgGalery3,
-#logement .slide-gallery #image6 #imgGalery4,
-#logement .slide-gallery #image6 #imgGalery5,
-#logement .slide-gallery #image6 #imgGalery6 {
+#slide .slide-gallery #image1 #imgGalery1,
+#slide .slide-gallery #image1 #imgGalery2,
+#slide .slide-gallery #image1 #imgGalery3,
+#slide .slide-gallery #image1 #imgGalery4,
+#slide .slide-gallery #image1 #imgGalery5,
+#slide .slide-gallery #image1 #imgGalery6,
+#slide .slide-gallery #image2 #imgGalery1,
+#slide .slide-gallery #image2 #imgGalery2,
+#slide .slide-gallery #image2 #imgGalery3,
+#slide .slide-gallery #image2 #imgGalery4,
+#slide .slide-gallery #image2 #imgGalery5,
+#slide .slide-gallery #image2 #imgGalery6,
+#slide .slide-gallery #image3 #imgGalery1,
+#slide .slide-gallery #image3 #imgGalery2,
+#slide .slide-gallery #image3 #imgGalery3,
+#slide .slide-gallery #image3 #imgGalery4,
+#slide .slide-gallery #image3 #imgGalery5,
+#slide .slide-gallery #image3 #imgGalery6,
+#slide .slide-gallery #image4 #imgGalery1,
+#slide .slide-gallery #image4 #imgGalery2,
+#slide .slide-gallery #image4 #imgGalery3,
+#slide .slide-gallery #image4 #imgGalery4,
+#slide .slide-gallery #image4 #imgGalery5,
+#slide .slide-gallery #image4 #imgGalery6,
+#slide .slide-gallery #image5 #imgGalery1,
+#slide .slide-gallery #image5 #imgGalery2,
+#slide .slide-gallery #image5 #imgGalery3,
+#slide .slide-gallery #image5 #imgGalery4,
+#slide .slide-gallery #image5 #imgGalery5,
+#slide .slide-gallery #image5 #imgGalery6,
+#slide .slide-gallery #image6 #imgGalery1,
+#slide .slide-gallery #image6 #imgGalery2,
+#slide .slide-gallery #image6 #imgGalery3,
+#slide .slide-gallery #image6 #imgGalery4,
+#slide .slide-gallery #image6 #imgGalery5,
+#slide .slide-gallery #image6 #imgGalery6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,96 +582,92 @@ footer .container ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 500px;
-  height: 500px;
+  width: 450px;
+  height: 450px;
   margin: 0 auto;
   border-radius: 20px;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }
 @media screen and (max-width: 750px) {
-  #logement .slide-gallery #image1 #imgGalery1,
-  #logement .slide-gallery #image1 #imgGalery2,
-  #logement .slide-gallery #image1 #imgGalery3,
-  #logement .slide-gallery #image1 #imgGalery4,
-  #logement .slide-gallery #image1 #imgGalery5,
-  #logement .slide-gallery #image1 #imgGalery6,
-  #logement .slide-gallery #image2 #imgGalery1,
-  #logement .slide-gallery #image2 #imgGalery2,
-  #logement .slide-gallery #image2 #imgGalery3,
-  #logement .slide-gallery #image2 #imgGalery4,
-  #logement .slide-gallery #image2 #imgGalery5,
-  #logement .slide-gallery #image2 #imgGalery6,
-  #logement .slide-gallery #image3 #imgGalery1,
-  #logement .slide-gallery #image3 #imgGalery2,
-  #logement .slide-gallery #image3 #imgGalery3,
-  #logement .slide-gallery #image3 #imgGalery4,
-  #logement .slide-gallery #image3 #imgGalery5,
-  #logement .slide-gallery #image3 #imgGalery6,
-  #logement .slide-gallery #image4 #imgGalery1,
-  #logement .slide-gallery #image4 #imgGalery2,
-  #logement .slide-gallery #image4 #imgGalery3,
-  #logement .slide-gallery #image4 #imgGalery4,
-  #logement .slide-gallery #image4 #imgGalery5,
-  #logement .slide-gallery #image4 #imgGalery6,
-  #logement .slide-gallery #image5 #imgGalery1,
-  #logement .slide-gallery #image5 #imgGalery2,
-  #logement .slide-gallery #image5 #imgGalery3,
-  #logement .slide-gallery #image5 #imgGalery4,
-  #logement .slide-gallery #image5 #imgGalery5,
-  #logement .slide-gallery #image5 #imgGalery6,
-  #logement .slide-gallery #image6 #imgGalery1,
-  #logement .slide-gallery #image6 #imgGalery2,
-  #logement .slide-gallery #image6 #imgGalery3,
-  #logement .slide-gallery #image6 #imgGalery4,
-  #logement .slide-gallery #image6 #imgGalery5,
-  #logement .slide-gallery #image6 #imgGalery6 {
+  #slide .slide-gallery #image1 #imgGalery1,
+  #slide .slide-gallery #image1 #imgGalery2,
+  #slide .slide-gallery #image1 #imgGalery3,
+  #slide .slide-gallery #image1 #imgGalery4,
+  #slide .slide-gallery #image1 #imgGalery5,
+  #slide .slide-gallery #image1 #imgGalery6,
+  #slide .slide-gallery #image2 #imgGalery1,
+  #slide .slide-gallery #image2 #imgGalery2,
+  #slide .slide-gallery #image2 #imgGalery3,
+  #slide .slide-gallery #image2 #imgGalery4,
+  #slide .slide-gallery #image2 #imgGalery5,
+  #slide .slide-gallery #image2 #imgGalery6,
+  #slide .slide-gallery #image3 #imgGalery1,
+  #slide .slide-gallery #image3 #imgGalery2,
+  #slide .slide-gallery #image3 #imgGalery3,
+  #slide .slide-gallery #image3 #imgGalery4,
+  #slide .slide-gallery #image3 #imgGalery5,
+  #slide .slide-gallery #image3 #imgGalery6,
+  #slide .slide-gallery #image4 #imgGalery1,
+  #slide .slide-gallery #image4 #imgGalery2,
+  #slide .slide-gallery #image4 #imgGalery3,
+  #slide .slide-gallery #image4 #imgGalery4,
+  #slide .slide-gallery #image4 #imgGalery5,
+  #slide .slide-gallery #image4 #imgGalery6,
+  #slide .slide-gallery #image5 #imgGalery1,
+  #slide .slide-gallery #image5 #imgGalery2,
+  #slide .slide-gallery #image5 #imgGalery3,
+  #slide .slide-gallery #image5 #imgGalery4,
+  #slide .slide-gallery #image5 #imgGalery5,
+  #slide .slide-gallery #image5 #imgGalery6,
+  #slide .slide-gallery #image6 #imgGalery1,
+  #slide .slide-gallery #image6 #imgGalery2,
+  #slide .slide-gallery #image6 #imgGalery3,
+  #slide .slide-gallery #image6 #imgGalery4,
+  #slide .slide-gallery #image6 #imgGalery5,
+  #slide .slide-gallery #image6 #imgGalery6 {
     width: 300px;
     height: 300px;
   }
 }
 @media screen and (max-width: 450px) {
-  #logement .slide-gallery #image1 #imgGalery1,
-  #logement .slide-gallery #image1 #imgGalery2,
-  #logement .slide-gallery #image1 #imgGalery3,
-  #logement .slide-gallery #image1 #imgGalery4,
-  #logement .slide-gallery #image1 #imgGalery5,
-  #logement .slide-gallery #image1 #imgGalery6,
-  #logement .slide-gallery #image2 #imgGalery1,
-  #logement .slide-gallery #image2 #imgGalery2,
-  #logement .slide-gallery #image2 #imgGalery3,
-  #logement .slide-gallery #image2 #imgGalery4,
-  #logement .slide-gallery #image2 #imgGalery5,
-  #logement .slide-gallery #image2 #imgGalery6,
-  #logement .slide-gallery #image3 #imgGalery1,
-  #logement .slide-gallery #image3 #imgGalery2,
-  #logement .slide-gallery #image3 #imgGalery3,
-  #logement .slide-gallery #image3 #imgGalery4,
-  #logement .slide-gallery #image3 #imgGalery5,
-  #logement .slide-gallery #image3 #imgGalery6,
-  #logement .slide-gallery #image4 #imgGalery1,
-  #logement .slide-gallery #image4 #imgGalery2,
-  #logement .slide-gallery #image4 #imgGalery3,
-  #logement .slide-gallery #image4 #imgGalery4,
-  #logement .slide-gallery #image4 #imgGalery5,
-  #logement .slide-gallery #image4 #imgGalery6,
-  #logement .slide-gallery #image5 #imgGalery1,
-  #logement .slide-gallery #image5 #imgGalery2,
-  #logement .slide-gallery #image5 #imgGalery3,
-  #logement .slide-gallery #image5 #imgGalery4,
-  #logement .slide-gallery #image5 #imgGalery5,
-  #logement .slide-gallery #image5 #imgGalery6,
-  #logement .slide-gallery #image6 #imgGalery1,
-  #logement .slide-gallery #image6 #imgGalery2,
-  #logement .slide-gallery #image6 #imgGalery3,
-  #logement .slide-gallery #image6 #imgGalery4,
-  #logement .slide-gallery #image6 #imgGalery5,
-  #logement .slide-gallery #image6 #imgGalery6 {
+  #slide .slide-gallery #image1 #imgGalery1,
+  #slide .slide-gallery #image1 #imgGalery2,
+  #slide .slide-gallery #image1 #imgGalery3,
+  #slide .slide-gallery #image1 #imgGalery4,
+  #slide .slide-gallery #image1 #imgGalery5,
+  #slide .slide-gallery #image1 #imgGalery6,
+  #slide .slide-gallery #image2 #imgGalery1,
+  #slide .slide-gallery #image2 #imgGalery2,
+  #slide .slide-gallery #image2 #imgGalery3,
+  #slide .slide-gallery #image2 #imgGalery4,
+  #slide .slide-gallery #image2 #imgGalery5,
+  #slide .slide-gallery #image2 #imgGalery6,
+  #slide .slide-gallery #image3 #imgGalery1,
+  #slide .slide-gallery #image3 #imgGalery2,
+  #slide .slide-gallery #image3 #imgGalery3,
+  #slide .slide-gallery #image3 #imgGalery4,
+  #slide .slide-gallery #image3 #imgGalery5,
+  #slide .slide-gallery #image3 #imgGalery6,
+  #slide .slide-gallery #image4 #imgGalery1,
+  #slide .slide-gallery #image4 #imgGalery2,
+  #slide .slide-gallery #image4 #imgGalery3,
+  #slide .slide-gallery #image4 #imgGalery4,
+  #slide .slide-gallery #image4 #imgGalery5,
+  #slide .slide-gallery #image4 #imgGalery6,
+  #slide .slide-gallery #image5 #imgGalery1,
+  #slide .slide-gallery #image5 #imgGalery2,
+  #slide .slide-gallery #image5 #imgGalery3,
+  #slide .slide-gallery #image5 #imgGalery4,
+  #slide .slide-gallery #image5 #imgGalery5,
+  #slide .slide-gallery #image5 #imgGalery6,
+  #slide .slide-gallery #image6 #imgGalery1,
+  #slide .slide-gallery #image6 #imgGalery2,
+  #slide .slide-gallery #image6 #imgGalery3,
+  #slide .slide-gallery #image6 #imgGalery4,
+  #slide .slide-gallery #image6 #imgGalery5,
+  #slide .slide-gallery #image6 #imgGalery6 {
     width: 200px;
     height: 200px;
   }
-}
-
-.description {
-  padding: 50px 0;
 }/*# sourceMappingURL=index.css.map */

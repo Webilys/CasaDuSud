@@ -1,69 +1,21 @@
 #logement {
-  .slide-gallery {
+  .description {
     padding: 50px 0;
+  }
 
-    #image1,
-    #image2,
-    #image3,
-    #image4,
-    #image5,
-    #image6 {
-      grid-template-columns: 1fr 2fr 1fr;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      transition: 0.2s;
+  .galerie-logement {
+    .container {
+      .imageLogement {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
 
-      #left,
-      #right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        i {
-          font-size: 2.5rem;
-          color: $color1;
-          transition: 0.2s;
-
-          @media screen and (max-width: 750px) {
-            font-size: 2rem;
-          }
-
-          &:hover {
-            color: $color2;
-            transform: scale(1.2);
-          }
-        }
-      }
-
-      #imgGalery1,
-      #imgGalery2,
-      #imgGalery3,
-      #imgGalery4,
-      #imgGalery5,
-      #imgGalery6 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 500px;
-        height: 500px;
-        margin: 0 auto;
-        border-radius: 20px;
-        box-shadow: 0 0 10px $blackShadow;
-
-        @media screen and (max-width: 750px) {
-          width: 300px;
-          height: 300px;
-        }
-
-        @media screen and (max-width: 450px) {
-          width: 200px;
-          height: 200px;
+        img {
+          width: 100%;
+          border-radius: 20px;
+          box-shadow: 0 0 10px $blackShadow;
         }
       }
     }
   }
-}
-.description {
-  padding: 50px 0;
 }

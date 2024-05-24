@@ -4,6 +4,7 @@ const menuIcons = document.getElementById("menuIcons");
 const openIcon = document.getElementById("openIcon");
 const closeIcon = document.getElementById("closeIcon");
 const nav = document.querySelector("nav");
+const slideGallery = document.querySelector(".slide-gallery");
 
 //Le menu reste fermé au chargement de la page
 
@@ -29,7 +30,21 @@ function closeNav() {
   nav.style.display = "none";
 }
 
-//-------------PAGE LE LOGEMENT-----------------
+//-------------PAGE LOGEMENT-----------------
+
+function slide1() {
+  window.open("slide.html", "_blank");
+}
+
+//-------------PAGE SLIDE-----------------
+
+//fonction pour fermer le visualisateur
+
+const iconCloseVisualisator = document.getElementById("iconCloseVisualisator");
+
+function closeVisualisator() {
+  window.history.back();
+}
 
 //Slide images
 const divImage1 = document.getElementById("image1");
