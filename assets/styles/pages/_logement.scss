@@ -6,26 +6,25 @@
   }
 
   .menuLogement {
-    padding: 30px;
+    padding: 20px 30px 20px 0;
+    width: 80%;
+    margin: 0 auto;
     ul {
       display: flex;
       justify-content: start;
       align-items: center;
       li {
         list-style: none;
-
         a {
-          padding-left: 20px;
+          padding: 20px 20px 20px 0;
           color: $color1;
-          transition: 0.2s;
-
+          transition: 0.2s ease;
           &:hover {
-            border: 1px solid $color1;
+            border-bottom: 2px solid $color1;
+            font-weight: bold;
+            // color: $white;
+            // background: $color1;
           }
-        }
-
-        &:hover {
-          transform: scale(1.1);
         }
       }
     }
@@ -72,22 +71,45 @@
     }
   }
 
-  #points-forts {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      flex-wrap: 1fr 1fr 1fr;
+  #ce-que-propose-le-logement {
+    .container {
+      ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
 
-      li {
-        list-style: none;
-        padding: 10px 20px;
-        margin: 20px 20px 20px 0;
-        border-radius: 20px;
-        // border: 1px solid $color1;
-        box-shadow: 0 0 5px $color1;
-        i {
-          margin-right: 10px;
-          color: $color1;
+        li {
+          list-style: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 0 0 10px $color1;
+          border-radius: 20px;
+          padding: 20px;
+
+          i {
+            color: $color1;
+            margin-right: 10px;
+          }
+
+          sup {
+            i {
+              margin-left: 5px;
+            }
+          }
+
+          ul {
+            li {
+              list-style: none;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              // box-shadow: 0 0 10px $white;
+              border-radius: none;
+              padding: 10px 0;
+            }
+          }
         }
       }
     }
@@ -107,6 +129,34 @@
   #infoCuisineList,
   #infoLingeMaisonList {
     display: none;
+    position: absolute;
+    box-shadow: 0 0 10px $color1;
+    border-radius: 20px;
+    padding: 20px;
+    background: $color1;
+    width: 300px;
+    color: $white;
+  }
+
+  #points-forts {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      flex-wrap: 1fr 1fr 1fr;
+
+      li {
+        list-style: none;
+        padding: 10px 20px;
+        margin: 20px 20px 20px 0;
+        border-radius: 20px;
+        // border: 1px solid $color1;
+        box-shadow: 0 0 5px $color1;
+        i {
+          margin-right: 10px;
+          color: $color1;
+        }
+      }
+    }
   }
 
   .galerie-logement {
