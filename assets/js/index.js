@@ -9,7 +9,7 @@ const nav = document.querySelector("nav");
 
 function windowLoad() {
   if ((window.width = 1250)) {
-    nav.style.display = "none";
+    // nav.style.display = "none";
     infoCuisineList.style.display = "none";
     infoLingeMaisonList.style.display = "none";
   }
