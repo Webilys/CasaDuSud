@@ -604,8 +604,26 @@ footer .container ul li {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+#logement #reglements {
+  padding-bottom: 50px;
+}
+#logement #reglements ul li {
+  list-style: none;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#logement #reglements ul li i {
+  margin-right: 10px;
+  font-size: 1.5rem;
+  color: #0097b2;
+}
 #logement footer {
-  margin-bottom: 120px;
+  margin-bottom: 100px;
 }
 
 #slide #slide-gallery {

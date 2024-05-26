@@ -7,7 +7,28 @@ const infoCuisineList = document.getElementById("infoCuisineList");
 const infoLingeMaisonList = document.getElementById("infoLingeMaisonList");
 
 // Fonction pour ouvrir le slide en cliquant sur les images
-function slide() {
+
+function slide1() {
+  window.location.href = "./slide.html";
+}
+
+function slide2() {
+  window.location.href = "./slide.html";
+}
+
+function slide3() {
+  window.location.href = "./slide.html";
+}
+
+function slide4() {
+  window.location.href = "./slide.html";
+}
+
+function slide5() {
+  window.location.href = "./slide.html";
+}
+
+function slide6() {
   window.location.href = "./slide.html";
 }
 
