@@ -207,10 +207,15 @@
           border-radius: 20px;
           box-shadow: 0 0 10px $blackShadow;
           transition: 0.2s;
+          cursor: pointer;
 
           &:hover {
             box-shadow: 0 0 20px $blackShadow;
             transform: scale(1.05);
+            @media screen and (max-width: 770px) {
+              box-shadow: 0 0 10px $blackShadow;
+              transform: scale(1);
+            }
           }
         }
       }
@@ -226,9 +231,13 @@
         display: flex;
         align-items: center;
         i {
-          margin-right: 10px;
+          margin-right: 20px;
           font-size: 1.5rem;
           color: $color1;
+          width: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
         }
       }
     }

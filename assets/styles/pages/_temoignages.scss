@@ -1,0 +1,40 @@
+#temoignages {
+  .temoignages {
+    padding: 50px 0 100px;
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+      justify-content: center;
+      align-items: center;
+
+      @media screen and (max-width: 960px) {
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 30px;
+      }
+
+      @media screen and (max-width: 650px) {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonialContainer {
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 0 10px $color1;
+        border-radius: 20px;
+        height: 100%;
+
+        .name {
+          font-weight: bold;
+          padding-bottom: 20px;
+        }
+
+        i {
+          color: $star;
+          text-shadow: 0 0 3px $black;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
