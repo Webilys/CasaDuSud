@@ -1,0 +1,54 @@
+#decouvrir-beziers {
+  .decouvrir-beziers {
+    .menuDecouvrir {
+      padding: 20px 30px 20px 0;
+      width: 80%;
+      margin: 0 auto;
+
+      ul {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        @media screen and (max-width: 930px) {
+          flex-direction: column;
+          justify-content: center;
+        }
+        li {
+          list-style: none;
+
+          @media screen and (max-width: 930px) {
+            padding: 10px 0;
+          }
+
+          a {
+            padding: 20px 20px 20px 0;
+            color: $color1;
+            transition: 0.2s ease;
+
+            @media screen and (max-width: 930px) {
+              padding: 5px 0;
+            }
+
+            &:hover {
+              border-bottom: 2px solid $color1;
+              font-weight: bold;
+
+              @media screen and (max-width: 930px) {
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #visites,
+    #activites {
+      .itemContainer {
+        .item {
+        }
+      }
+    }
+  }
+}

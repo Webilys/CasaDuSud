@@ -1125,6 +1125,61 @@ footer .container ul li {
   padding-bottom: 20px;
 }
 
+#decouvrir-beziers .decouvrir-beziers .menuDecouvrir {
+  padding: 20px 30px 20px 0;
+  width: 80%;
+  margin: 0 auto;
+}
+#decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 930px) {
+  #decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+#decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li {
+  list-style: none;
+}
+@media screen and (max-width: 930px) {
+  #decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li {
+    padding: 10px 0;
+  }
+}
+#decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li a {
+  padding: 20px 20px 20px 0;
+  color: #0097b2;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+@media screen and (max-width: 930px) {
+  #decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li a {
+    padding: 5px 0;
+  }
+}
+#decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li a:hover {
+  border-bottom: 2px solid #0097b2;
+  font-weight: bold;
+}
+@media screen and (max-width: 930px) {
+  #decouvrir-beziers .decouvrir-beziers .menuDecouvrir ul li a:hover {
+    border: none;
+  }
+}
 .footerbar {
   width: 100vw;
   background: #ffffff;
