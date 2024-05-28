@@ -257,10 +257,10 @@ header .container .navDiv nav {
 @media screen and (max-width: 1250px) {
   header .container .navDiv nav {
     display: none;
-    width: 80vw;
+    width: 90vw;
     background: #0097b2;
     position: absolute;
-    margin: 0 auto;
+    margin-right: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
