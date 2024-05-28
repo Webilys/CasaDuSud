@@ -1180,6 +1180,44 @@ footer .container ul li {
     border: none;
   }
 }
+#decouvrir-beziers .decouvrir-beziers #visites h2,
+#decouvrir-beziers .decouvrir-beziers #activites h2 {
+  padding-bottom: 50px;
+}
+#decouvrir-beziers .decouvrir-beziers #visites .itemContainer,
+#decouvrir-beziers .decouvrir-beziers #activites .itemContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+#decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item,
+#decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item {
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+#decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item img,
+#decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item img {
+  width: 100%;
+}
+#decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item div,
+#decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item div {
+  padding-left: 20px;
+}
+#decouvrir-beziers .decouvrir-beziers #visites {
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  padding: 50px 0 0;
+}
+#decouvrir-beziers .decouvrir-beziers #activites {
+  padding: 50px 0 120px;
+}
+
 .footerbar {
   width: 100vw;
   background: #ffffff;
