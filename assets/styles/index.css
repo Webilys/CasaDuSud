@@ -166,7 +166,7 @@ button:hover {
 }
 
 header {
-  background: url(../img/bg-home.jpeg) center/cover;
+  background: url(../img/bg-home.webp) center/cover;
 }
 header .container {
   width: 100%;
@@ -397,7 +397,7 @@ footer .container ul li {
 
 #accueil {
   height: 100vh;
-  background: url(../img/bg-home.jpeg) no-repeat center/cover;
+  background: url(../img/bg-home.webp) no-repeat center/cover;
 }
 @media screen and (max-width: 1250px) {
   #accueil {
@@ -1180,6 +1180,10 @@ footer .container ul li {
     border: none;
   }
 }
+#decouvrir-beziers .decouvrir-beziers #visites,
+#decouvrir-beziers .decouvrir-beziers #activites {
+  padding: 50px 0;
+}
 #decouvrir-beziers .decouvrir-beziers #visites h2,
 #decouvrir-beziers .decouvrir-beziers #activites h2 {
   padding-bottom: 50px;
@@ -1202,20 +1206,47 @@ footer .container ul li {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 900px) {
+  #decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item,
+  #decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item {
+    grid-template-columns: 1fr;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 #decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item img,
 #decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item img {
   width: 100%;
+}
+@media screen and (max-width: 900px) {
+  #decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item img,
+  #decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item img {
+    padding-bottom: 30px;
+  }
 }
 #decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item div,
 #decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item div {
   padding-left: 20px;
 }
+@media screen and (max-width: 900px) {
+  #decouvrir-beziers .decouvrir-beziers #visites .itemContainer .item div p,
+  #decouvrir-beziers .decouvrir-beziers #activites .itemContainer .item div p {
+    padding-bottom: 20px;
+  }
+}
 #decouvrir-beziers .decouvrir-beziers #visites {
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   padding: 50px 0 0;
 }
-#decouvrir-beziers .decouvrir-beziers #activites {
-  padding: 50px 0 120px;
+#decouvrir-beziers footer {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 930px) {
+  #decouvrir-beziers footer {
+    margin-bottom: 200px;
+  }
 }
 
 .footerbar {
