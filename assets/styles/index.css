@@ -1359,6 +1359,23 @@ footer .container ul li {
   font-size: 1rem;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  color: #333333;
+}
+#contact .contact .container #formContainer form input::-webkit-input-placeholder, #contact .contact .container #formContainer form textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+#contact .contact .container #formContainer form input::-moz-placeholder, #contact .contact .container #formContainer form textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+#contact .contact .container #formContainer form input:-ms-input-placeholder, #contact .contact .container #formContainer form textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+#contact .contact .container #formContainer form input::-ms-input-placeholder, #contact .contact .container #formContainer form textarea::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+#contact .contact .container #formContainer form input::placeholder,
+#contact .contact .container #formContainer form textarea::placeholder {
+  color: rgba(0, 0, 0, 0.25);
 }
 #contact .contact .container #formContainer form input:focus,
 #contact .contact .container #formContainer form textarea:focus {
