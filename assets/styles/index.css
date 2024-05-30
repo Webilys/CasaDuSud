@@ -1369,6 +1369,12 @@ footer .container ul li {
   padding: 20px;
   text-align: center;
 }
+@media screen and (max-width: 950px) {
+  #contact .contact .container #infoContactContainer {
+    margin: 50px 0 10px;
+    padding: 0;
+  }
+}
 #contact .contact .container #infoContactContainer .infoText,
 #contact .contact .container #infoContactContainer .infoTelephone,
 #contact .contact .container #infoContactContainer .infoMail {
@@ -1391,12 +1397,22 @@ footer .container ul li {
   color: #0097b2;
   font-weight: bold;
 }
+@media screen and (max-width: 950px) {
+  #contact .contact .container #infoContactContainer .infoMail {
+    margin-bottom: 0;
+  }
+}
 #contact .contact .container #formContainer {
   -webkit-box-shadow: 0 0 10px #0097b2;
           box-shadow: 0 0 10px #0097b2;
   border-radius: 20px;
   padding: 20px;
   margin: 50px 0;
+}
+@media screen and (max-width: 950px) {
+  #contact .contact .container #formContainer {
+    margin: 0 0 50px;
+  }
 }
 #contact .contact .container #formContainer h2 {
   text-align: center;
