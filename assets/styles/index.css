@@ -1338,28 +1338,59 @@ footer .container ul li {
   }
 }
 #contact .contact .container #infoContactContainer {
+  margin: 50px 0;
   padding: 20px;
+  text-align: center;
+}
+#contact .contact .container #infoContactContainer .infoText,
+#contact .contact .container #infoContactContainer .infoTelephone,
+#contact .contact .container #infoContactContainer .infoMail {
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+#contact .contact .container #infoContactContainer .infoText a,
+#contact .contact .container #infoContactContainer .infoTelephone a,
+#contact .contact .container #infoContactContainer .infoMail a {
+  color: #333333;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#contact .contact .container #infoContactContainer .infoText a:hover,
+#contact .contact .container #infoContactContainer .infoTelephone a:hover,
+#contact .contact .container #infoContactContainer .infoMail a:hover {
+  color: #0097b2;
+  font-weight: bold;
 }
 #contact .contact .container #formContainer {
+  -webkit-box-shadow: 0 0 10px #0097b2;
+          box-shadow: 0 0 10px #0097b2;
+  border-radius: 20px;
   padding: 20px;
+  margin: 50px 0;
+}
+#contact .contact .container #formContainer h2 {
+  text-align: center;
 }
 #contact .contact .container #formContainer form label {
-  padding: 10px;
+  padding: 10px 0;
   display: block;
   width: 100%;
-  display: grid;
-  grid-template-columns: 30% 70%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  color: #0097b2;
 }
 #contact .contact .container #formContainer form input,
 #contact .contact .container #formContainer form textarea {
   padding: 5px 10px;
+  margin: 10px 0 15px;
   font-size: 1rem;
-  border-radius: 5px;
-  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-left: none;
   color: #333333;
+  width: 100%;
 }
 #contact .contact .container #formContainer form input::-webkit-input-placeholder, #contact .contact .container #formContainer form textarea::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.25);
@@ -1381,6 +1412,10 @@ footer .container ul li {
 #contact .contact .container #formContainer form textarea:focus {
   outline: 2px solid #0097b2;
   border-radius: 5px;
+}
+#contact .contact .container #formContainer form textarea {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  resize: none;
 }
 #contact .contact .container #formContainer form button {
   border: 1px solid #0097b2;
