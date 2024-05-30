@@ -1327,6 +1327,33 @@ footer .container ul li {
   }
 }
 
+#legal .legal .container {
+  padding: 50px 0 50px;
+}
+#legal .legal .container h2 {
+  padding-bottom: 20px;
+}
+#legal .legal .container p {
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+#legal .legal .container p a {
+  color: #0097b2;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+#legal .legal .container p a:hover {
+  font-weight: bold;
+}
+#legal footer {
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 930px) {
+  #legal footer {
+    margin-bottom: 200px;
+  }
+}
+
 #contact .contact .container {
   display: grid;
   grid-template-columns: 30% 70%;
